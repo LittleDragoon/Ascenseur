@@ -1,15 +1,20 @@
-#ifndef PERSONNE
-#define PERSONNE
+#ifndef PERSON_H
+#define PERSON_H
 
-typedef struct _Person Person;
-struct _Person
+typedef struct _Person
 {
-    char *fname;
-    char *name;
-    Date *birth;
-};
+    int src;
+    int dest;
+} Person;
 
-Person *creer_personne(char prenom[], char nom[], int jour, int mois, int annee);
-void print_person(Person *person);
+typedef struct _PersonList
+{
+    Person *person;
+    struct _PersonList *next;
+} PersonList;
+
+Person *createPerson(int src, int dest);
+
+PersonList *insert(Person *p, PersonList *list);
 
 #endif
