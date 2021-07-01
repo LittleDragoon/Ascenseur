@@ -11,4 +11,10 @@ Person *createPerson(int src, int dest)
     return res;
 }
 
-// PersonList *insert(Person *p, PersonList *list)s
+PersonList *insert(Person *p, PersonList *list)
+{
+    PersonList *res = malloc(sizeof(PersonList));
+    res->person = p;
+    res->next = list;
+    return res;
+}
