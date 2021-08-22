@@ -2,9 +2,8 @@
 
 NAME = elevator
 
-SRCS = person.c \
-		elevator.c\
-		main.c
+SRCS = test_main.c person.c elevator.c
+#	main.c
 
 # variable 
 OBJS = ${SRCS:.c=.o}
@@ -19,12 +18,12 @@ $(NAME) : ${OBJS}
 
 all: $(NAME)
 
-
 clean:
 	rm -f  ${OBJS}
 
-fclean:
-	clean
+fclean: clean
 	rm -f $(NAME)
+
+re	: fclean all
 
 	

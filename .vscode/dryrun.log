@@ -1,9 +1,11 @@
 make -f "/home/benzhu/DepInfo/Ascenseur/makefile" --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/benzhu/DepInfo/Ascenseur'
-make: Leaving directory '/home/benzhu/DepInfo/Ascenseur'
  
 make: /home/benzhu/DepInfo/Ascenseur/makefile: No such file or directory
+ 
 make: *** No rule to make target '/home/benzhu/DepInfo/Ascenseur/makefile'.
 make: Failed to remake makefile '/home/benzhu/DepInfo/Ascenseur/makefile'.
 make: *** No targets specified and no makefile found.  Stop.
+ 
+make: Leaving directory '/home/benzhu/DepInfo/Ascenseur'
  
